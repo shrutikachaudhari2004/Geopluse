@@ -1,0 +1,18 @@
+store_id,store_name,latitude,longitude,area,store_type
+
+
+
+STORE001,GeoMart Wakad,18.5990,73.7630,Wakad,Supermarket
+
+
+store_id,store_name,latitude,longitude,area,store_type
+STORE001,GeoMart Wakad,18.5990,73.7630,Wakad,Supermarket
+STORE002,GeoMart Hinjewadi,18.5912,73.7389,Hinjewadi,Supermarket
+STORE003,GeoMart Baner,18.5590,73.7868,Baner,Supermarket
+STORE004,GeoMart Balewadi,18.5760,73.7790,Balewadi,Supermarket
+STORE005,GeoMart Aundh,18.5595,73.8070,Aundh,Supermarket
+STORE006,GeoMart Shivajinagar,18.5308,73.8470,Shivajinagar,Supermarket
+STORE007,GeoMart Kothrud,18.5074,73.8077,Kothrud,Supermarket
+STORE008,GeoMart Viman Nagar,18.5679,73.9143,Viman Nagar,Supermarket
+STORE009,GeoMart Kharadi,18.5514,73.9470,Kharadi,Supermarket
+STORE010,GeoMart Hadapsar,18.5089,73.9260,Hadapsar,Supermarket
