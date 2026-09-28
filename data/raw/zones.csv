@@ -1,0 +1,11 @@
+zone_id,zone_name,area,zone_type,min_lat,max_lat,min_lon,max_lon
+ZONE001,Wakad Commercial Zone,Wakad,Commercial,18.5850,18.6100,73.7500,73.7750
+ZONE002,Hinjewadi Commercial Zone,Hinjewadi,Commercial,18.5750,18.6050,73.7200,73.7500
+ZONE003,Baner Commercial Zone,Baner,Commercial,18.5450,18.5700,73.7750,73.8050
+ZONE004,Balewadi Commercial Zone,Balewadi,Commercial,18.5600,18.5900,73.7650,73.7950
+ZONE005,Aundh Commercial Zone,Aundh,Commercial,18.5450,18.5750,73.7950,73.8200
+ZONE006,Shivajinagar Commercial Zone,Shivajinagar,Commercial,18.5150,18.5450,73.8300,73.8600
+ZONE007,Kothrud Commercial Zone,Kothrud,Commercial,18.4900,18.5200,73.7900,73.8250
+ZONE008,Viman Nagar Commercial Zone,Viman Nagar,Commercial,18.5500,18.5850,73.8950,73.9300
+ZONE009,Kharadi Commercial Zone,Kharadi,Commercial,18.5350,18.5700,73.9250,73.9600
+ZONE010,Hadapsar Commercial Zone,Hadapsar,Commercial,18.4900,18.5250,73.9050,73.9450
