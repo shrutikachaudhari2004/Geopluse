@@ -1,0 +1,31 @@
+GeoPulse - Day 8 Summary
+
+Completed Tasks:
+
+1. PySpark environment tested
+2. GPS data loaded using PySpark
+3. GPS schema inspected
+4. Timestamp converted
+5. Hour extracted
+6. GPS coordinates converted to WKT point representation
+7. Commercial zones loaded using PySpark
+8. GPS points spatially matched with commercial zones
+9. Zone-wise total GPS pings calculated
+10. Unique devices calculated by zone
+
+Technology Used:
+
+Python
+PySpark
+Spark DataFrames
+CSV
+Spatial point representation
+Spatial join logic
+
+Next Phase:
+
+Apache Sedona
+dbt transformations
+Store overlap analysis
+Cannibalization analysis
+Kepler.gl visualization
