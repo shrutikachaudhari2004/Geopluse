@@ -1,0 +1,7 @@
+file,status,rows,columns,missing_values,duplicate_rows,invalid_coordinates
+data/raw/gps_pings.csv,CHECKED,10000,4,0,0,0
+data/raw/zones.csv,CHECKED,10,8,0,0,0
+data/stores/stores.csv,CHECKED,11,6,0,1,0
+data/processed/gps_pings_clean.csv,CHECKED,10000,6,0,0,0
+data/processed/hourly_gps_summary.csv,CHECKED,18,4,0,0,0
+data/processed/pyspark_zone_footfall.csv,CHECKED,9,4,0,0,0
