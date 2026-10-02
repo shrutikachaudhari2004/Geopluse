@@ -1,0 +1,46 @@
+store_1,store_2,shared_devices,overlap_rate_pct
+GeoMart Baner,GeoMart Balewadi,130,55.32
+GeoMart Baner,GeoMart Aundh,111,47.64
+GeoMart Balewadi,GeoMart Aundh,73,31.33
+GeoMart Wakad,GeoMart Balewadi,69,32.86
+GeoMart Balewadi,GeoMart Viman Nagar,69,27.94
+GeoMart Balewadi,GeoMart Kothrud,66,27.05
+GeoMart Kothrud,GeoMart Hadapsar,64,26.56
+GeoMart Balewadi,GeoMart Hadapsar,61,25.31
+GeoMart Aundh,GeoMart Shivajinagar,60,26.09
+GeoMart Aundh,GeoMart Hadapsar,59,25.32
+GeoMart Baner,GeoMart Hadapsar,59,25.11
+GeoMart Shivajinagar,GeoMart Kothrud,58,25.22
+GeoMart Shivajinagar,GeoMart Viman Nagar,58,25.22
+GeoMart Wakad,GeoMart Aundh,57,27.14
+GeoMart Baner,GeoMart Shivajinagar,57,24.78
+GeoMart Viman Nagar,GeoMart Hadapsar,57,23.65
+GeoMart Aundh,GeoMart Kothrud,56,24.03
+GeoMart Baner,GeoMart Viman Nagar,56,23.83
+GeoMart Kothrud,GeoMart Viman Nagar,53,21.72
+GeoMart Wakad,GeoMart Baner,51,24.29
+GeoMart Wakad,GeoMart Viman Nagar,50,23.81
+GeoMart Wakad,GeoMart Hadapsar,50,23.81
+GeoMart Aundh,GeoMart Viman Nagar,50,21.46
+GeoMart Wakad,GeoMart Kothrud,48,22.86
+GeoMart Baner,GeoMart Kothrud,48,20.43
+GeoMart Viman Nagar,GeoMart Kharadi,46,27.71
+GeoMart Shivajinagar,GeoMart Hadapsar,46,20.0
+GeoMart Kothrud,GeoMart Kharadi,44,26.51
+GeoMart Balewadi,GeoMart Kharadi,40,24.1
+GeoMart Baner,GeoMart Kharadi,39,23.49
+GeoMart Balewadi,GeoMart Shivajinagar,39,16.96
+GeoMart Wakad,GeoMart Shivajinagar,38,18.1
+GeoMart Aundh,GeoMart Kharadi,36,21.69
+GeoMart Wakad,GeoMart Kharadi,34,20.48
+GeoMart Shivajinagar,GeoMart Kharadi,34,20.48
+GeoMart Kharadi,GeoMart Hadapsar,30,18.07
+GeoMart Wakad,GeoMart Hinjewadi,28,90.32
+GeoMart Hinjewadi,GeoMart Aundh,10,32.26
+GeoMart Hinjewadi,GeoMart Baner,8,25.81
+GeoMart Hinjewadi,GeoMart Shivajinagar,8,25.81
+GeoMart Hinjewadi,GeoMart Viman Nagar,8,25.81
+GeoMart Hinjewadi,GeoMart Hadapsar,7,22.58
+GeoMart Hinjewadi,GeoMart Balewadi,6,19.35
+GeoMart Hinjewadi,GeoMart Kothrud,5,16.13
+GeoMart Hinjewadi,GeoMart Kharadi,1,3.23

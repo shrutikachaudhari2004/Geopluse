@@ -1,0 +1,11 @@
+store_id,store_name,total_pings,unique_devices
+STORE008,GeoMart Viman Nagar,275,247
+STORE004,GeoMart Balewadi,282,247
+STORE007,GeoMart Kothrud,287,244
+STORE010,GeoMart Hadapsar,286,241
+STORE003,GeoMart Baner,265,235
+STORE005,GeoMart Aundh,258,233
+STORE006,GeoMart Shivajinagar,263,230
+STORE001,GeoMart Wakad,486,210
+STORE009,GeoMart Kharadi,183,166
+STORE002,GeoMart Hinjewadi,32,31
