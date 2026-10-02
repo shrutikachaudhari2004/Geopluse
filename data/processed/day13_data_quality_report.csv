@@ -1,0 +1,7 @@
+check,result
+total_records,10000
+missing_device_id,0
+missing_timestamp,0
+invalid_latitude,0
+invalid_longitude,0
+duplicate_records,0
