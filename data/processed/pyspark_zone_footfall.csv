@@ -1,0 +1,10 @@
+zone_id,zone_name,total_gps_pings,unique_devices
+ZONE010,Hadapsar Commercial Zone,366,297
+ZONE008,Viman Nagar Commercial Zone,319,271
+ZONE007,Kothrud Commercial Zone,277,242
+ZONE004,Balewadi Commercial Zone,253,223
+ZONE009,Kharadi Commercial Zone,235,209
+ZONE006,Shivajinagar Commercial Zone,221,201
+ZONE003,Baner Commercial Zone,189,177
+ZONE005,Aundh Commercial Zone,179,163
+ZONE001,Wakad Commercial Zone,153,141
