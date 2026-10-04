@@ -327,3 +327,53 @@ if zone_file.exists():
         zones_final,
         use_container_width=True
     )
+
+
+  # ==========================================================
+# DAY 17 - BUSINESS INSIGHTS
+# ==========================================================
+
+st.header("💡 Day 17 Business Insights")
+
+insights_file = PROCESSED_DIR / "day17_business_insights.csv"
+
+if insights_file.exists():
+
+    insights_df = pd.read_csv(insights_file)
+
+    if not insights_df.empty:
+
+        st.subheader("📌 Key Business Insights")
+
+        for _, row in insights_df.iterrows():
+
+            insight = str(row["business_insight"])
+
+            st.info(insight)
+
+    else:
+
+        st.warning("Day 17 business insights file is empty.")
+
+else:
+
+    st.warning(
+        "Day 17 business insights file was not found."
+    )
+
+
+# ==========================================================
+# GPS DATA LIMITATION
+# ==========================================================
+
+st.header("⚠️ GPS Data Limitation")
+
+st.warning(
+    "GPS pings indicate recorded device activity, "
+    "not confirmed store visits or actual customer identities."
+)
+
+st.caption(
+    "The GeoPulse dataset is simulated and is intended "
+    "for analytics and portfolio demonstration."
+)
