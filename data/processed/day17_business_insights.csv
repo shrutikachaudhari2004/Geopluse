@@ -1,0 +1,9 @@
+insight_number,business_insight
+1,GeoPulse analyzes simulated GPS device activity for hyper-local retail mobility analysis.
+2,The dataset contains 10000 recorded GPS pings.
+3,The dataset contains activity from 1000 unique devices.
+4,Peak recorded GPS activity occurs around 14:00.
+5,Hadapsar Commercial Zone is the highest-ranked zone based on recorded GPS activity.
+6,The project currently contains 11 stores.
+7,GPS pings represent recorded device activity and should not be interpreted as confirmed store visits.
+8,The dataset does not identify actual customer identities.
