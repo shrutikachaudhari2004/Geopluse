@@ -466,3 +466,66 @@ else:
     st.warning(
         "Some Day 18 validation files are missing."
     )
+
+
+    # ==========================================================
+# DAY 19 - PROJECT DOCUMENTATION STATUS
+# ==========================================================
+
+st.header("📚 Day 19 – Project Documentation")
+
+documentation_file = (
+    PROCESSED_DIR / "day19_documentation_status.csv"
+)
+
+if documentation_file.exists():
+
+    documentation_df = pd.read_csv(
+        documentation_file
+    )
+
+    st.subheader("📋 Project Documentation Status")
+
+    st.dataframe(
+        documentation_df,
+        use_container_width=True
+    )
+
+    available_count = (
+        documentation_df["status"]
+        .astype(str)
+        .str.upper()
+        .eq("AVAILABLE")
+        .sum()
+    )
+
+    total_count = len(documentation_df)
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.metric(
+            "📁 Available Files",
+            available_count
+        )
+
+    with col2:
+        st.metric(
+            "📊 Files Checked",
+            total_count
+        )
+
+    if available_count == total_count:
+        st.success(
+            "🎉 All important project documentation files are available."
+        )
+    else:
+        st.warning(
+            "Some project documentation files need attention."
+        )
+
+else:
+
+    st.warning(
+        "Day 19 documentation status file was not found."
+    )
