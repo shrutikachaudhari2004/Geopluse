@@ -1,0 +1,11 @@
+check,completed
+GPS dataset available,True
+Zones dataset available,True
+Stores dataset available,True
+Clean GPS dataset available,True
+PySpark output available,True
+Data quality report available,True
+Final analytics available,True
+Business insights available,True
+Dashboard available,True
+README available,True

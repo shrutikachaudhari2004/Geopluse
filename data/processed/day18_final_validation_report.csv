@@ -1,0 +1,17 @@
+file,status,size_kb
+data/raw/gps_pings.csv,AVAILABLE,466.68
+data/raw/zones.csv,AVAILABLE,0.9
+data/stores/stores.csv,AVAILABLE,0.72
+data/processed/gps_pings_clean.csv,AVAILABLE,601.08
+data/processed/hourly_gps_summary.csv,AVAILABLE,0.45
+data/processed/pyspark_zone_footfall.csv,AVAILABLE,0.41
+data/processed/day15_data_quality_report.csv,AVAILABLE,0.37
+data/processed/day16_project_summary.csv,AVAILABLE,0.13
+data/processed/day16_hourly_activity.csv,AVAILABLE,0.23
+data/processed/day16_zone_ranking.csv,AVAILABLE,0.44
+data/processed/day16_peak_hour.csv,AVAILABLE,0.05
+data/processed/day17_business_insights.csv,AVAILABLE,0.57
+data/processed/day17_project_health.csv,AVAILABLE,0.26
+dashboard/app.py,AVAILABLE,11.2
+dashboard/requirements.txt,AVAILABLE,0.03
+README.md,AVAILABLE,1.2

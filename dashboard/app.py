@@ -377,3 +377,92 @@ st.caption(
     "The GeoPulse dataset is simulated and is intended "
     "for analytics and portfolio demonstration."
 )
+
+# ==========================================================
+# DAY 18 - FINAL PROJECT VALIDATION
+# ==========================================================
+
+st.header("✅ Day 18 – Final Project Validation")
+
+validation_file = PROCESSED_DIR / "day18_final_validation_report.csv"
+checklist_file = PROCESSED_DIR / "day18_project_checklist.csv"
+
+# Final Validation Report
+if validation_file.exists():
+
+    validation_df = pd.read_csv(validation_file)
+
+    st.subheader("📋 Final Validation Report")
+
+    st.dataframe(
+        validation_df,
+        use_container_width=True
+    )
+
+    # Validation summary
+    if "status" in validation_df.columns:
+
+        passed = (
+            validation_df["status"]
+            .astype(str)
+            .str.upper()
+            .eq("PASS")
+            .sum()
+        )
+
+        failed = (
+            validation_df["status"]
+            .astype(str)
+            .str.upper()
+            .eq("FAIL")
+            .sum()
+        )
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            st.metric("✅ Passed Checks", passed)
+
+        with col2:
+            st.metric("❌ Failed Checks", failed)
+
+else:
+
+    st.warning(
+        "Day 18 final validation report was not found."
+    )
+
+
+# Project Checklist
+if checklist_file.exists():
+
+    checklist_df = pd.read_csv(checklist_file)
+
+    st.subheader("📝 Day 18 Project Checklist")
+
+    st.dataframe(
+        checklist_df,
+        use_container_width=True
+    )
+
+else:
+
+    st.warning(
+        "Day 18 project checklist was not found."
+    )
+
+
+# Final Project Status
+st.subheader("🏆 Final Project Status")
+
+if validation_file.exists() and checklist_file.exists():
+
+    st.success(
+        "GeoPulse Day 18 final validation completed successfully."
+    )
+
+else:
+
+    st.warning(
+        "Some Day 18 validation files are missing."
+    )
