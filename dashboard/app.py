@@ -690,3 +690,55 @@ st.caption(
     "The GeoPulse dataset is simulated and intended "
     "for analytics and portfolio demonstration."
 )
+
+
+
+# =====================================
+# DAY 22 - FINAL PROJECT AUDIT
+# =====================================
+
+st.header("🔎 Day 22 - Final Project Audit")
+
+audit_file = PROCESSED_DIR / "day22_final_project_audit.csv"
+
+if audit_file.exists():
+    audit_df = pd.read_csv(audit_file)
+
+    total = len(audit_df)
+    available = (audit_df["status"] == "AVAILABLE").sum()
+    attention = total - available
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Items Checked", total)
+    col2.metric("Available", int(available))
+    col3.metric("Needs Attention", int(attention))
+
+    st.dataframe(audit_df, use_container_width=True)
+
+    st.download_button(
+        "Download Day 22 Audit",
+        data=audit_df.to_csv(index=False),
+        file_name="day22_final_project_audit.csv",
+        mime="text/csv",
+    )
+
+    if attention == 0:
+        st.success("All checked files are available.")
+    else:
+        st.warning(
+            "Some files need attention. Review the audit table."
+        )
+else:
+    st.warning(
+        "Run scripts/day_22_final_project_audit.py first."
+    )
+
+st.subheader("⚠️ GPS Data Limitation")
+st.warning(
+    "GPS pings indicate recorded device activity, "
+    "not confirmed store visits or actual customer identities."
+)
+st.caption(
+    "The dataset is simulated and intended for analytics "
+    "and portfolio demonstration."
+)

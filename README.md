@@ -90,3 +90,49 @@ Pune, Maharashtra
 Project setup completed.
 
 >>>>>>> d6badb7 (Initial Geopluse Project setup)
+
+
+
+
+
+## Day 21 – Final Quality Assurance
+
+### Work Completed
+- Checked important raw and processed project files.
+- Verified CSV readability and non-empty outputs.
+- Checked dashboard and documentation file availability.
+- Generated a final quality report.
+- Added a Day 21 report section to the dashboard.
+
+### Output
+- `data/processed/day21_final_quality_report.csv`
+- `scripts/day_21_final_quality_check.py`
+
+### Technologies
+Python, Pandas, Streamlit, Git and GitHub.
+
+### Data Limitation
+The GPS dataset is simulated. GPS pings indicate recorded
+device activity, not confirmed store visits or actual
+customer identities.
+
+
+
+## Day 22 – Final Project Audit
+
+### Work Completed
+- Audited key raw and processed project files.
+- Checked CSV readability and empty outputs.
+- Reviewed business insight and validation reports.
+- Checked dashboard and documentation availability.
+- Generated the Day 22 project audit report.
+- Added the audit report to the Streamlit dashboard.
+
+### Output
+- `scripts/day_22_final_project_audit.py`
+- `data/processed/day22_final_project_audit.csv`
+
+### Data Limitation
+The dataset is simulated. GPS pings represent recorded
+device activity and do not confirm store visits or identify
+actual customers.
