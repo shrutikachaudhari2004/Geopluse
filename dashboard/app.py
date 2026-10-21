@@ -529,3 +529,111 @@ else:
     st.warning(
         "Day 19 documentation status file was not found."
     )
+# ==========================================================
+# DAY 20 - FINAL PROJECT SUMMARY
+# ==========================================================
+
+st.header("🏆 Day 20 – Final GeoPulse Project Summary")
+
+day20_file = (
+    PROCESSED_DIR /
+    "day20_final_project_summary.csv"
+)
+
+if day20_file.exists():
+
+    day20_df = pd.read_csv(day20_file)
+
+    st.subheader("📊 Final Project File Validation")
+
+    st.dataframe(
+        day20_df,
+        use_container_width=True
+    )
+
+    available = (
+        day20_df["status"]
+        .astype(str)
+        .str.upper()
+        .eq("AVAILABLE")
+        .sum()
+    )
+
+    total = len(day20_df)
+
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.metric(
+            "📁 Files Available",
+            available
+        )
+
+    with col2:
+        st.metric(
+            "📋 Files Checked",
+            total
+        )
+
+    with col3:
+        percentage = (
+            round((available / total) * 100, 1)
+            if total > 0 else 0
+        )
+
+        st.metric(
+            "📈 Project Readiness",
+            f"{percentage}%"
+        )
+
+    if available == total:
+
+        st.success(
+            "🎉 GeoPulse is ready for portfolio presentation!"
+        )
+
+    else:
+
+        st.warning(
+            "⚠️ Some project files still need attention."
+        )
+
+else:
+
+    st.warning(
+        "Day 20 final project summary was not found."
+    )
+
+
+# ==========================================================
+# FINAL PROJECT DESCRIPTION
+# ==========================================================
+
+st.subheader("📌 GeoPulse Project")
+
+st.write(
+    "GeoPulse is a simulated GPS mobility analytics project "
+    "that analyzes device activity, geographic zones, store "
+    "locations, peak activity periods and business insights "
+    "through Python, PySpark, SQL and Streamlit."
+)
+
+
+# ==========================================================
+# FINAL GPS LIMITATION
+# ==========================================================
+
+st.subheader("⚠️ GPS Data Limitation")
+
+st.warning(
+    "GPS pings indicate recorded device activity, "
+    "not confirmed store visits or actual customer identities."
+)
+
+st.caption(
+    "The GeoPulse dataset is simulated and is intended "
+    "for analytics and portfolio demonstration."
+)
+
+
+
