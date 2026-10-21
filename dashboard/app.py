@@ -637,3 +637,56 @@ st.caption(
 
 
 
+
+# =====================================
+# DAY 21 - FINAL QUALITY CHECK
+# =====================================
+
+st.header("✅ Day 21 - Final Quality Check")
+
+day21_file = PROCESSED_DIR / "day21_final_quality_report.csv"
+
+if day21_file.exists():
+    day21_df = pd.read_csv(day21_file)
+
+    total_items = len(day21_df)
+    available_items = (
+        day21_df["status"] == "AVAILABLE"
+    ).sum()
+    attention_items = total_items - available_items
+
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Items Checked", total_items)
+    col2.metric("Available", int(available_items))
+    col3.metric("Needs Attention", int(attention_items))
+
+    st.subheader("Final Quality Report")
+    st.dataframe(day21_df, use_container_width=True)
+
+    st.download_button(
+        "Download Day 21 Quality Report",
+        data=day21_df.to_csv(index=False),
+        file_name="day21_final_quality_report.csv",
+        mime="text/csv",
+    )
+
+    if attention_items == 0:
+        st.success("All checked items are available.")
+    else:
+        st.warning(
+            "Review items marked MISSING, EMPTY, or ERROR."
+        )
+else:
+    st.warning(
+        "Day 21 report not found. Run the Day 21 script first."
+    )
+
+st.subheader("⚠️ GPS Data Limitation")
+st.warning(
+    "GPS pings indicate recorded device activity, "
+    "not confirmed store visits or actual customer identities."
+)
+st.caption(
+    "The GeoPulse dataset is simulated and intended "
+    "for analytics and portfolio demonstration."
+)

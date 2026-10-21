@@ -1,0 +1,15 @@
+item,status,rows,details
+Raw GPS,AVAILABLE,10000,data\raw\gps_pings.csv
+Zones,AVAILABLE,10,data\raw\zones.csv
+Stores,AVAILABLE,11,data\stores\stores.csv
+Cleaned GPS,AVAILABLE,10000,data\processed\gps_pings_clean.csv
+Hourly GPS Summary,AVAILABLE,18,data\processed\hourly_gps_summary.csv
+Zone Footfall,AVAILABLE,9,data\processed\pyspark_zone_footfall.csv
+Day 17 Business Insights,AVAILABLE,8,data\processed\day17_business_insights.csv
+Day 17 Project Health,AVAILABLE,7,data\processed\day17_project_health.csv
+Day 18 Validation,AVAILABLE,16,data\processed\day18_final_validation_report.csv
+Day 18 Checklist,AVAILABLE,10,data\processed\day18_project_checklist.csv
+Day 20 Summary,AVAILABLE,9,data\processed\day20_final_project_summary.csv
+Dashboard,AVAILABLE,-,dashboard\app.py
+Dashboard Requirements,AVAILABLE,-,dashboard\requirements.txt
+README,AVAILABLE,-,README.md
